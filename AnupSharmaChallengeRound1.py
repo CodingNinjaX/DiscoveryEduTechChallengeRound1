@@ -211,17 +211,23 @@ def draw_infographic():
     t.done()
 
 def draw_tree():
-    t.teleport(-600, -200)
+    t.penup()
+    t.goto(-600, -200)
+    t.pendown()
     t.seth(90)
     t.color("brown")
     t.width(100)
     t.fd(300)
     t.color("green")
     t.dot(250)
-    t.teleport(-600, -285)
+    t.penup()
+    t.goto(-600, -285)
+    t.pendown()
     t.color("black")
     t.write("Tree", align="center", font=("Georgia", 20, "bold"))
-    t.teleport(-575, -315)
+    t.penup()
+    t.goto(-575, -315)
+    t.pendown()
     t.write("Absorbs 0.025kg CO2e/hr", align="center", font=("Georgia", 20, "bold"))
 
 def draw_fridge():
@@ -248,11 +254,11 @@ def draw_fridge():
     t.pendown()
     t.seth(0)
     t.fd(250)
-    t.teleport(475,90)
+    t.goto(475,90)
     t.seth(0)
     t.fd(250)
 
-    t.teleport(490,150)
+    t.goto(490,150)
     t.fd(10)
     t.seth(270)
     t.fd(30)
@@ -261,7 +267,7 @@ def draw_fridge():
     t.seth(90)
     t.fd(30)
 
-    t.teleport(490,45)
+    t.goto(490,45)
     t.fd(10)
     t.seth(270)
     t.fd(260)
@@ -272,9 +278,9 @@ def draw_fridge():
     t.seth(180)
     t.fd(10)
 
-    t.teleport(600,-285)
+    t.goto(600,-285)
     t.write("Refrigerator", align="center", font=("Georgia", 20, "bold"))
-    t.teleport(600,-315)
+    t.goto(600,-315)
     t.write("Produces 0.5kg CO2e/hr", align="center", font=("Georgia", 20, "bold"))
 
 def get_feedback(total_carbon):

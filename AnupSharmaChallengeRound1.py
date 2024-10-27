@@ -254,11 +254,15 @@ def draw_fridge():
     t.pendown()
     t.seth(0)
     t.fd(250)
+    t.penup()
     t.goto(475,90)
+    t.pendown()
     t.seth(0)
     t.fd(250)
 
+    t.penup()
     t.goto(490,150)
+    t.pendown()
     t.fd(10)
     t.seth(270)
     t.fd(30)
@@ -267,7 +271,9 @@ def draw_fridge():
     t.seth(90)
     t.fd(30)
 
+    t.penup()
     t.goto(490,45)
+    t.pendown()
     t.fd(10)
     t.seth(270)
     t.fd(260)
@@ -278,9 +284,13 @@ def draw_fridge():
     t.seth(180)
     t.fd(10)
 
+    t.penup()
     t.goto(600,-285)
+    t.pendown()
     t.write("Refrigerator", align="center", font=("Georgia", 20, "bold"))
+    t.penup()
     t.goto(600,-315)
+    t.pendown()
     t.write("Produces 0.5kg CO2e/hr", align="center", font=("Georgia", 20, "bold"))
 
 def get_feedback(total_carbon):
